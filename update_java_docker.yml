@@ -14,4 +14,7 @@
   #        state: started
    - name: install jre
      apt: name=default-jre 
+   - name: Install docker via script
+     script: ./docker_install.sh
+
 ...
