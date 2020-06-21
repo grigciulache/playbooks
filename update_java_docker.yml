@@ -16,5 +16,8 @@
      apt: name=default-jre 
    - name: Install docker via script
      script: ./docker_install.sh
-
+   - name: start docker
+     service:
+          name: docker
+          state: started
 ...
